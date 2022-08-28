@@ -13,10 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('countries', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-            $table->string('name');
+        Schema::create('cursos', function (Blueprint $table) {
+            $table->id(); //Llave primaria (automatico)
+           
+            $table->string('nombre');
+            $table->string('description');
+            $table->integer('duracion');
+            $table->timestamps(); //Registra el tiempo de creacion de la tabla (automatico)
         });
     }
 
@@ -27,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('countries');
+        Schema::dropIfExists('cursos');
     }
 };
