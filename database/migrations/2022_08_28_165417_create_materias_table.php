@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('materias', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_materia');
             $table->string('nombre_materia');
             $table->integer('intencidad_horaria');
             $table->timestamps();
