@@ -11,7 +11,7 @@
             </div>
             <div class="col-lg">
                 <div class="form bg-light text-dark rounded">
-                    <form action="/courses" method="POST" class="mx-3 px-3 my-5 pt-2 pb-5" enctype="multipart/form-data">
+                    <form action="/cursos" method="POST" class="mx-3 px-3 my-5 pt-2 pb-5" enctype="multipart/form-data">
                     @csrf
                     @if ($errors->any())
                         @foreach ($errors->all() as $alert)
@@ -25,8 +25,8 @@
                         <h2 class="text-center mt-5">Crear Nuevo Curso</h2>
                         <br>
                         <div class="form-group">
-                            <label for="name"><b>Nombre del curso:</b></label>
-                            <input id="name" class="form-control" type="text" name="name">
+                            <label for="nombre"><b>Nombre del curso:</b></label>
+                            <input id="nombre" class="form-control" type="text" name="nombre">
                         </div>
                         <div class="form-group">
                             <label for="description"><b>Descripción:</b></label>

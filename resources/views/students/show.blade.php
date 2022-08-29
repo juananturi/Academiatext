@@ -19,43 +19,43 @@
                                 <div class="form-group row">
                                     <b> Tipo de documento:</b>
                                     <div class="col-sm-6">
-                                        <span>{{$apprentice->document_type}}</span>
+                                        <span>{{$apprentice->documento_identidad}}</span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <b>No. de documento </b>
                                     <div class="col-sm-6">
-                                        <span class="">{{$apprentice->document_number}}</span>
+                                        <span class="">{{$apprentice->numero_documento}}</span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <b>Documento pdf:</b>
                                     <div class="col-sm-6">
-                                        <iframe src="{{ Storage::url($apprentice->identify_document) }}" width="100" height="100"></iframe>
+                                        <iframe src="{{ Storage::url($apprentice->documento_identidad) }}" width="100" height="100"></iframe>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <b>País de expedición: </b>
                                     <div class="col-sm-6">
-                                        <span class="">{{$countries->name}}</span>
+                                        <span class="">{{$paises->nombre}}</span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <b>Depto. de expedición: </b>
                                     <div class="col-sm-6">
-                                        <span class="">{{$departments->name}}</span>
+                                        <span class="">{{$departamentos->nombre}}</span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <b>Municipio de expedición: </b>
                                     <div class="col-sm-6">
-                                        <span class="">{{$municipalities->name}}</span>
+                                        <span class="">{{$municipios->nombre}}</span>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <b>Fecha de expedición: </b>
                                     <div class="col-sm-6">
-                                        <span class="">{{$apprentice->expedition_date}}</span>
+                                        <span class="">{{$apprentice->fecha_expedicion}}</span>
                                     </div>
                                 </div>
                 </div>
@@ -67,61 +67,61 @@
                             <div class="form-group row">
                                 <b>Nombres: </b>
                                 <div class="col-sm-6">
-                                    <span class="">{{$apprentice->names}}</span>
+                                    <span class="">{{$apprentice->nombres}}</span>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <b>Primer apellido: </b>
                                 <div class="col-sm-6">
-                                    <span class="">{{$apprentice->last_name1}}</span>
+                                    <span class="">{{$apprentice->primer_apellido}}</span>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <b>Segundo apellido: </b>
                                 <div class="col-sm-6">
-                                    <span class="">{{$apprentice->last_name2}}</span>
+                                    <span class="">{{$apprentice->segundo_apellido}}</span>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <b>Género: </b>
                                 <div class="col-sm-6">
-                                    <span class="">{{$apprentice->gender}}</span>
+                                    <span class="">{{$apprentice->genero}}</span>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <b>Fecha de nacimiento: </b>
                                 <div class="col-sm-6">
-                                    <span class="">{{$apprentice->birth_date}}</span>
+                                    <span class="">{{$apprentice->fecha_nacimiento}}</span>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <b>País de nacimiento: </b>
                                 <div class="col-sm-6">
-                                    <span class="">{{$countries->name}}</span>
+                                    <span class="">{{$paises->nombre}}</span>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <b>Depto. de nacimiento: </b>
                                 <div class="col-sm-6">
-                                    <span class="">{{$departments->name}}</span>
+                                    <span class="">{{$departamentos->nombre}}</span>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <b>Municipio de nacimiento: </b>
                                 <div class="col-sm-6">
-                                    <span class="">{{$municipalities->name}}</span>
+                                    <span class="">{{$municipios->nombre}}</span>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <b>Estrato socioeconómico: </b>
                                 <div class="col-sm-6">
-                                    <span class="">{{$apprentice->stratum}}</span>
+                                    <span class="">{{$apprentice->estrato}}</span>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <b>Curso matriculado: </b>
                                 <div class="col-sm-6">
-                                    {{-- <span class="">{{$courses->id}} {{$courses->name}}</span> --}}
+                                    {{-- <span class="">{{$cursos->id}} {{$cursos->nombre}}</span> --}}
                                 </div>
                             </div>
                             <br>
